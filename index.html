@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-        }
-    </style>
+    <title>Login Page with Navigation</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My GitHub Page</h1>
-    <p>Hello! I'm [Your Name]. This is my personal GitHub page.</p>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+        </ul>
+    </nav>
+
+    <!-- Login Form -->
+    <div class="login-form">
+        <h2>Login</h2>
+        <form action="#">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
 </body>
 </html>
